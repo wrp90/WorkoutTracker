@@ -4,7 +4,7 @@ const router = require('express').Router();
 const path = require('path');
 
 
-router.get('/workouts', async (req, res) =>{
+router.get('/exercise', async (req, res) =>{
     try {
         res.sendFile(path.join(__dirname, '../public/exercise.html'));
     } catch (err) {
