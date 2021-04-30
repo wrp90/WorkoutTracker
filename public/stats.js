@@ -22,6 +22,42 @@ function generatePalette() {
 }
 
 function populateChart(data) {
+  // const fakeData = [
+  //   {
+  //     day: '2/2/22',
+  //     exercises: [
+  //       {
+  //         type: 'cardio',
+  //         name: 'running',
+  //         duration: 10,
+  //         distance: 20
+  //       }
+  //     ]
+  //   }
+  // ]
+
+  // const fakeExpectedData = [
+  //   {
+  //     day: '2/2/22',
+  //     exercises: [
+  //       {
+  //         type: 'cardio',
+  //         name: 'running',
+  //         duration: 10,
+  //         distance: 20
+  //       }
+  //       {
+  //         type: 'cardio',
+  //         name: 'jogging',
+  //         duration: 10,
+  //         distance: 20
+  //       }
+  //     ],
+  //    totalDuration: 20
+  //   }
+  // ]
+
+  // 
   let durations = data.map(({ totalDuration }) => totalDuration);
   let pounds = calculateTotalWeight(data);
   let workouts = workoutNames(data);
